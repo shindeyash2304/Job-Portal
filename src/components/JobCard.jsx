@@ -1,17 +1,17 @@
 import React from 'react';
 
-const JobCard = ({ job }) => {
+function JobCard({ job }) {
   return (
-    <div className="bg-white shadow-md rounded-lg p-5 m-3 w-full max-w-md">
-      <h2 className="text-xl font-bold text-gray-800">{job.title}</h2>
-      <p className="text-sm text-gray-500">{job.company} • {job.location}</p>
-      <p className="mt-2 text-gray-700">Type: {job.type}</p>
-      <p className="text-gray-700">Salary: {job.salary}</p>
-      <button className="mt-3 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">
+    <div className="bg-white rounded-lg shadow-md p-6 w-full max-w-sm">
+      <h2 className="text-xl font-semibold mb-2">{job.title}</h2>
+      <p className="text-gray-600 mb-1"><strong>Company:</strong> {job.company}</p>
+      <p className="text-gray-600 mb-1"><strong>Location:</strong> {job.location}</p>
+      <p className="text-gray-600 mb-4"><strong>Salary:</strong> {job.salary}</p>
+      <button className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
         Apply Now
       </button>
     </div>
   );
-};
+}
 
 export default JobCard;

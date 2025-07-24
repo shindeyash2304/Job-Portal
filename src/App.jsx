@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import JobCard from './components/JobCard';
 import jobs from './data/jobs';
 import './App.css';
+import Hero from './components/Hero'; // add this
 
 function App() {
   return (
